@@ -77,14 +77,13 @@ font-family: 'Quicksand', sans-serif;
     justify-content: space-between;
 }
 .dropdown {
-    display: inline-block;
     position: relative;
-    outline: none;
-    margin: 10px;
 }
-.dropButton{
-    cursor: pointer;
-    transition: .35s ease-out;
+.dropdownMenu {
+    position: absolute;
+    left: 0;
+    top: 30%;
+
 }
 .containerNav {
     list-style-type: none;
