@@ -18,10 +18,7 @@ a:link {
 a:hover {
     color: #F06A3F; 
 }
-img{
-    width: 100%;
-    height: auto;
-}
+
 link {
     cursor: pointer;
 }
@@ -134,4 +131,37 @@ font-family: 'Quicksand', sans-serif;
 }
 .containerNav > div {
     flex: 1 1 300px;
+}
+.containerFooter> div {
+    display: flex;
+    align-items: center;
+}
+.containerFooter {
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "c c c b b b t i f "
+}
+.contact {
+    justify-content: left;
+    grid-area: c;
+}
+.building {
+    justify-content: center;
+    grid-area: b;
+}
+.twitter{
+    justify-content: right;
+    grid-area: t;
+}
+.instagram{
+    justify-content: right;
+    grid-area: i;
+}
+.facebook{
+    justify-content: right;
+    grid-area: f;
 }
