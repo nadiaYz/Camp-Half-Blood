@@ -31,25 +31,25 @@ footer{
     background-color: #5072B4;
 }
     .font-34 {
-        font-size: 34px;
+        font-size: 2.125rem;
     }
     .font-30 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     .font-28 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .font-26 {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
     .font-24 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .font-20 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .font-50 {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
     .center{
         text-align: center;
@@ -75,15 +75,13 @@ font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 }
 .containerHeader {
-    display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 100px;
-    padding: 8px 10px 20px 10px;
+    display: flex;
+    padding: 18px 10px 30px 10px;
+    justify-content: space-between;
 }
 .containerHeader > div {
     display: flex;
-    padding: 20px 0px 10px 0px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .menu {
@@ -134,18 +132,34 @@ font-family: 'Quicksand', sans-serif;
     flex: 1 1 200px;
 }
 .sky {
+    background-image: url("../Assets/img/rectangle3.png");
     width:100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.pegasus {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
     height: auto;
 }
 .campImg {
-    width: 68%;
+    width: 100%;
     height: auto;
 }
-.logo {
-    width: 110%;
-    height: 110%;
+.logoDiv {
+    height: auto;
     background-color: #F06A3F;
     border-radius: 50%;
+}
+.logo {
+    padding: 14px 10px 6px 10px;
+    width: 100%;
+    height: auto;
 }
 .explore {
     padding: 20px 0 20px 0;
@@ -203,34 +217,50 @@ font-family: 'Quicksand', sans-serif;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "c c c b b b t i f "
+    "c c . b b . t i f "
 }
 .contact {
     justify-content: left;
     grid-area: c;
 }
-.building {
-    justify-content: center;
+.buildingDiv {
+    justify-content: right;
     grid-area: b;
-    width:90%;
+    width: 100%;
     height: auto;
 }
-.twitter{
+.building {
+    width: 100%;
+    height: auto;
+}
+.twitterDiv{
     justify-content: right;
     grid-area: t;
     width:100%;
     height: auto;
 }
-.instagram{
+.twitter {
+    width: 100%;
+    height: auto;
+}
+.instagramDiv{
     justify-content: right;
     grid-area: i;
     width:100%;
     height: auto;
 }
-.facebook{
+.instagram {
+    width: 100%;
+    height: auto;
+}
+.facebookDiv{
     justify-content: right;
     grid-area: f;
     width:100%;
+    height: auto;
+}
+.facebook {
+    width: 100%;
     height: auto;
 }
 .teaserIntroDiv {
@@ -272,4 +302,40 @@ font-family: 'Quicksand', sans-serif;
     align-items: center;
     justify-content: center;
     padding: 4px 50px 30px 50px;
+}
+.charactersIntro {
+    padding: 30px 10px 40px 10px;
+}
+.charactersIntroImgDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+.charactersIntroImg {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    padding: 10px 10px 30px 10px;
+}
+.containerCharacters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 40px 40px;
+    flex-wrap: wrap;
+}
+.containerCharacters > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px
+}
+.charactersImg {
+    width: 100%;
+    height: auto;
 }
