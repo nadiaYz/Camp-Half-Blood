@@ -326,17 +326,17 @@ font-family: 'Quicksand', sans-serif;
     justify-content: center;
     padding: 4px 50px 30px 50px;
 }
-.charactersIntro {
-    padding: 30px 10px 40px 10px;
+.ellipseIntro {
+    padding: 10px 10px 40px 10px;
 }
-.charactersIntroImgDiv {
+.ellipseIntroImgDiv {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     height: auto;
 }
-.charactersIntroImg {
+.ellipseIntroImg {
     justify-content: center;
     width: 100%;
     height: auto;
@@ -403,4 +403,29 @@ font-family: 'Quicksand', sans-serif;
 .charactersButton {
     grid-area: button;
     justify-content: top;
+}
+.gallerySky {
+    background-image: url("../Assets/img/Rectangle 25.png");
+    width:100%;
+    height: auto
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.wrap > div {
+    flex: 1 1 200px;
+}
+.booksIntro {
+    padding: 0 200px 0 200px;
+}
+.containerBooks {
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
