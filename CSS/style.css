@@ -327,7 +327,7 @@ font-family: 'Quicksand', sans-serif;
     padding: 4px 50px 30px 50px;
 }
 .ellipseIntro {
-    padding: 10px 10px 40px 10px;
+    padding: 20px 10px 10px 10px;
 }
 .ellipseIntroImgDiv {
     display: block;
@@ -344,6 +344,11 @@ font-family: 'Quicksand', sans-serif;
     margin: auto;
     display: flex;
     padding: 10px 10px 40px 10px;
+}
+@media (max-width: 500px) {
+    .ellipseIntroImg {
+        padding: 10px 10px 20px 10px;
+    }
 }
 .charactersImg {
     width: 90%;
@@ -405,27 +410,105 @@ font-family: 'Quicksand', sans-serif;
     justify-content: top;
 }
 .gallerySky {
-    background-image: url("../Assets/img/Rectangle 25.png");
+    background-image: url("../Assets/img/rectangle3.png");
     width:100%;
-    height: auto
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
     padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media (max-width: 500px) {
+    .gallerySky {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
 .wrap > div {
     flex: 1 1 200px;
 }
 .booksIntro {
     padding: 0 200px 0 200px;
+    width: 100%;
+    height: auto;
 }
-.containerBooks {
+.containerFanArt {
     align-items: center;
-    padding: 10px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     display: flex;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+}
+.containerFanArt > div {
+    flex: 1 1 260px;
+}
+.fanArtImg {
+    width: 70%;
+    height: auto;
+}
+.fanArtImgDiv {
+    padding: 0 10px 0;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+    .fanArtImgHazel {
+        width: 40%;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .fanArtImgHazel {
+        width: 68%;
+        height: auto;
+    }
+}
+.booksIntro {
+    padding: 10px 40px 10px 40px;
+}
+.containerBooks {
+    align-items: center;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.booksDiv {
+    justify-items: center;
+    padding: 10px 0 10px 0;
+}
+.booksTitle {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.booksImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 0;
+}
+.booksImgDiv {
+    width: 100%;
+    height: auto;
+}
+.booksUl {
+    text-align: center;
+}
+@media (max-width: 900px){
+    .booksTitleResp {
+        padding: 0 20px 0 20px;
+    }
+}
+@media (max-width: 900px){
+    .booksTitleResp {
+        padding: 0 20px 0 20px;
+    }
 }
