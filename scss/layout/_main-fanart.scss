@@ -1,0 +1,30 @@
+.containerFanArt {
+	align-items: center;
+	padding: 30px 30px 30px 30px;
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	>div {
+		flex: 1 1 260px;
+	}
+}
+.fanArtImg {
+	width: 70%;
+	height: auto;
+}
+.fanArtImgDiv {
+	padding: 0 10px 0;
+	@include imagesWH;
+}
+.gallerySky {
+	background-image: url("../Assets/img/rectangle3.png");
+	@include imagesWH;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}

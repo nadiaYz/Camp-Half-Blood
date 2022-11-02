@@ -1,0 +1,51 @@
+footer {
+	background-color: $background-color_1;
+}
+.containerFooter {
+	>div {
+		display: grid;
+		align-items: center;
+	}
+	align-items: center;
+	padding: 10px 30px 10px 30px;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "c c . b b . t i f ";
+}
+.contact {
+	justify-content: left;
+	grid-area: c;
+}
+.buildingDiv {
+	justify-content: right;
+	grid-area: b;
+	@include imagesWH;
+}
+.building {
+	@include imagesWH;
+}
+.twitterDiv {
+	justify-content: right;
+	grid-area: t;
+	@include imagesWH;
+}
+.twitter {
+	@include imagesWH;
+}
+.instagramDiv {
+	justify-content: right;
+	grid-area: i;
+	@include imagesWH;
+}
+.instagram {
+	@include imagesWH;
+}
+.facebookDiv {
+	justify-content: right;
+	grid-area: f;
+	@include imagesWH;
+}
+.facebook {
+	@include imagesWH;
+}

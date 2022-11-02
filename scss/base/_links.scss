@@ -1,0 +1,21 @@
+ul {
+	li {
+		list-style-type: none;
+	}
+}
+a {
+	&:visited {
+		color: $color_1;
+		text-decoration-line: none;
+	}
+	&:link {
+		color: $color_1;
+		text-decoration-line: none;
+	}
+	&:hover {
+		color: $color_2;
+	}
+}
+link {
+	cursor: pointer;
+}

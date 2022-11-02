@@ -1,0 +1,46 @@
+.menuButtons {
+	background-color: $background-color_6;
+	border: 5px 10px 5px 10px;
+	color: $color_1;
+	border-color: $border-color_1;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 10px;
+	h2 {
+		&:hover {
+			color: $color_3;
+		}
+	}
+}
+.booksButton {
+	padding: 5px 50px 5px 50px;
+}
+.charactersButton {
+	padding: 0 18.7px 5px 18.7px;
+	grid-area: button;
+	justify-content: top;
+}
+.tvButton {
+	padding: 5px 26.4px 5px 26.4px;
+}
+.fanButton {
+	padding: 5px 43.8px 5px 43.8px;
+}
+.newsButtons {
+	background-color: $background-color_6;
+	border: 5px 10px 5px 10px;
+	border-color: $border-color_1;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+	margin: 20px 50px 0 50px;
+	h2 {
+		&:hover {
+			color: $color_3;
+		}
+	}
+}
+.buttonMargin {
+	margin: 10px 0 0 10px;
+}

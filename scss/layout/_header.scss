@@ -1,0 +1,80 @@
+header {
+	background-color: $background-color_1;
+}
+.containerHeader {
+	display: flex;
+	padding: 18px 10px 30px 10px;
+	justify-content: space-between;
+	>div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.logoDiv {
+	height: auto;
+	background-color: $background-color_2;
+	border-radius: 50%;
+}
+.logo {
+	padding: 14px 10px 6px 10px;
+	@include imagesWH;
+}
+.campImg {
+	@include imagesWH;
+}
+.dropdown {
+	button {
+		background-color: $background-color_5;
+		width: 110%;
+		height: auto;
+		border-radius: 10px;
+		border: none;
+		color: $color_1;
+		text-decoration: none;
+		cursor: pointer;
+		&:focus {
+			+ {
+				ul {
+					opacity: 1;
+					pointer-events: all;
+					transform: translateY(0px);
+				}
+			}
+		}
+	}
+	div {
+		opacity: 0;
+	}
+}
+.containerNav {
+	padding: 0 70px 10px 70px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	>div {
+		flex: 1 1 300px;
+	}
+}
+.menu {
+	border: 2px solid #5072B4;
+	position: absolute;
+	right: 1.6%;
+	top: 14%;
+	text-align: right;
+	background-color: $background-color_4;
+	padding: .35rem;
+	border-radius: .25rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all .4s ease;
+	li {
+		&:hover {
+			color: $color_3;
+		}
+	}
+}

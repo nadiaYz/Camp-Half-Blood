@@ -1,0 +1,35 @@
+.booksIntro {
+	padding: 0 200px 0 200px;
+	@include imagesWH;
+	padding: 10px 40px 10px 40px;
+}
+.containerBooks {
+	align-items: center;
+	padding: 0 30px 30px 30px;
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.booksDiv {
+	justify-items: center;
+	padding: 10px 0 10px 0;
+}
+.booksTitle {
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+.booksImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0 10px 0;
+}
+.booksImgDiv {
+	@include imagesWH;
+}
+.booksUl {
+	text-align: center;
+}

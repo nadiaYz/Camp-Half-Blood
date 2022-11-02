@@ -1,0 +1,36 @@
+.sky {
+	background-image: url("../Assets/img/rectangle3.png");
+	@include imagesWH;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.pegasus {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: auto;
+}
+.explore {
+	padding: 20px 0 20px 0;
+}
+.containerMain {
+	align-items: center;
+	padding: 10px 30px 25px 30px;
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	>div {
+		flex: 1 1 250px;
+	}
+}
+.menuImg {
+	width: 60%;
+	height: auto;
+	padding: 20px 0 20px 0;
+}

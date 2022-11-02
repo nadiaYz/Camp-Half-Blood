@@ -1,0 +1,77 @@
+.ellipseIntro {
+	padding: 20px 10px 10px 10px;
+}
+.ellipseIntroImgDiv {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: auto;
+}
+.ellipseIntroImg {
+	justify-content: center;
+	@include imagesWH;
+	align-items: center;
+	margin: auto;
+	display: flex;
+	padding: 10px 10px 40px 10px;
+}
+.charactersIntro {
+	@extend .booksIntro; 
+	font-family: $font-family_1;
+	font-size: 28px;
+	text-align: center;
+}
+.charactersImg {
+	width: 90%;
+	height: 100%;
+}
+.characterNames {
+	background-color: $background-color_6;
+	padding: 10px 5px 10px 5px;
+	color: $color_1;
+	border-color: $border-color_1;
+	text-decoration: none;
+	border-radius: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+.characterNameGrid {
+	h2 {
+		&:hover {
+			color: $color_3;
+		}
+	}
+	grid-area: name;
+}
+.characterNamesMenu {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all .4s ease;
+}
+.containerCharacters {
+	align-items: center;
+	padding: 25px 30px 25px 30px;
+	display: flex;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	>div {
+		flex: 1 1 600px;
+	}
+}
+.gridCharacters {
+	display: grid;
+	padding: 10px 10px 10px 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "img name" "img button";
+}
+.charactersImgDiv {
+	grid-area: img;
+	padding: 0 10px 0;
+	@include imagesWH;
+}
