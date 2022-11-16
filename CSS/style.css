@@ -206,7 +206,7 @@ header {
   text-align: center;
   flex-wrap: wrap; }
   .containerMain > div {
-    flex: 1 1 250px; }
+    flex: 1 1 281px; }
 
 .menuImg {
   width: 60%;
@@ -529,6 +529,8 @@ footer {
 @media (max-width: 900px) {
   .menu {
     top: 9%; }
+  .containermain {
+    padding: 10px 41px 25px 30px; }
   .fanArtImgHazel {
     width: 40%;
     height: auto; }
